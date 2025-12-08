@@ -7,7 +7,7 @@ health_bp = Blueprint('health', __name__)
 def health_check():
     try:
         return jsonify({
-            "message": "Server is on line now",
+            "message": "Server is active",
             "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         }), 200
     except Exception as e:
